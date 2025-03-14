@@ -1,0 +1,155 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Header Section */
+.header {
+  background-color: #2c3e50;
+  padding: 10px 20px;
+  position: relative; /* Ensures relative positioning for absolute elements inside */
+}
+
+/* Navigation Bar */
+.nav-bar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.nav-bar a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2em;
+  margin: 0 15px;
+}
+
+.nav-bar a:hover {
+  color: #ecf0f1;
+}
+
+/* Position Signup Button at the Top-Right Corner */
+.signup-btn {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  background-color: #e74c3c;
+  color: white;
+  font-size: 1.2em;
+  border: none;
+  padding: 12px 30px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.signup-btn:hover {
+  background-color: #c0392b;
+}
+
+/* Hero Section */
+.hero {
+  background-color: #0a71b7;
+  color: white;
+  text-align: center;
+  padding: 50px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30vh;
+}
+
+/* Center Hero Content */
+.hero-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Hero Text */
+.hero-content h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+}
+
+.hero-content p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Center Shop Now Button */
+.shop-now-btn {
+  background-color: #2ecc71;
+  color: white;
+  text-decoration: none;
+  padding: 12px 30px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+.shop-now-btn:hover {
+  background-color: #27ae60;
+}
+
+/* Categories Section */
+.categories {
+  padding: 40px 20px;
+  text-align: center;
+  background-color: #f4f4f4;
+}
+
+.categories h2 {
+  font-size: 2.5em;
+  margin-bottom: 30px;
+}
+
+.category-links {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.category {
+  background-color: #3498db;
+  color: white;
+  padding: 12px 25px;
+  text-decoration: none;
+  font-size: 1.2em;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.category:hover {
+  background-color: #2980b9;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  .nav-bar {
+      flex-direction: column;
+      align-items: flex-start;
+  }
+
+  .category-links {
+      flex-direction: column;
+      gap: 10px;
+  }
+
+  .hero-content h1 {
+      font-size: 2.5em;
+  }
+
+  .hero-content p {
+      font-size: 1em;
+  }
+}
